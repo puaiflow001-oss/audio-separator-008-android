@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090817" />
+  <title>🥰 កម្មវិធីបំបែកសំឡេង008 🥰</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark">008</div>
+      <div class="brand-copy">
+        <div class="brand-title">កម្មវិធីបំបែកសំឡេង<span>008</span></div>
+        <div class="brand-subtitle">AI MUSIC SEPARATOR</div>
+      </div>
+      <button class="icon-btn" id="settingsShortcut" aria-label="Settings">⚙</button>
+    </header>
+
+    <main>
+      <section class="page active" id="homePage">
+        <div class="hero">
+          <div class="eyebrow"><span class="live-dot"></span> STUDIO • AUDIO TOOLS</div>
+          <h1>បំបែកសំឡេង<br><span>តាមតម្រូវការរបស់អ្នក</span></h1>
+          <p>ជ្រើសរើសបទចម្រៀង ហើយរៀបចំសម្រាប់បំបែកសំឡេងជាផ្នែកៗ។</p>
+          <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+          <div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="section-heading">
+          <div><span class="section-kicker">START HERE</span><h2>បញ្ចូលបទចម្រៀង</h2></div>
+          <span class="step-badge">01 / 03</span>
+        </div>
+
+        <label class="upload-card" for="audioInput" id="dropZone">
+          <div class="upload-icon">＋</div>
+          <strong>ជ្រើសរើសឯកសារតន្ត្រី</strong>
+          <span>ចុចទីនេះដើម្បី Browse Music</span>
+          <small>MP3 · WAV · M4A · FLAC</small>
+          <input id="audioInput" type="file" accept="audio/*,.mp3,.wav,.m4a,.flac" />
+        </label>
+
+        <div class="selected-file hidden" id="selectedFile">
+          <div class="file-icon">♫</div>
+          <div class="file-info"><strong id="fileName">Audio file</strong><span id="fileMeta">0 MB</span></div>
+          <button class="remove-file" id="removeFile" aria-label="Remove file">✕</button>
+        </div>
+
+        <div class="options-card">
+          <div class="option-title"><div><span class="section-kicker">OUTPUT</span><h3>ជ្រើសរើសផ្នែកសំឡេង</h3></div><span class="mini-tag">2 STEMS</span></div>
+          <div class="stem-grid">
+            <div class="stem selected"><div class="stem-icon vocal">♫</div><div><b>Vocals</b><small>សំឡេងច្រៀង</small></div><span class="check">✓</span></div>
+            <div class="stem selected"><div class="stem-icon music">♬</div><div><b>Instrumental</b><small>សំឡេងភ្លេង</small></div><span class="check">✓</span></div>
+          </div>
+        </div>
+
+        <button class="primary-btn" id="processBtn" disabled><span>✦</span> ចាប់ផ្ដើមបំបែកសំឡេង <b>→</b></button>
+        <p class="helper-text" id="processHint">សូមជ្រើសរើសបទចម្រៀងជាមុនសិន</p>
+
+        <div class="info-strip"><span>🔒</span><div><b>ឯកជនភាពឯកសារ</b><small>ក្នុងកំណែ UI នេះ ឯកសារនៅលើឧបករណ៍របស់អ្នក។</small></div></div>
+      </section>
+
+      <section class="page" id="historyPage">
+        <div class="page-heading"><span class="section-kicker">YOUR LIBRARY</span><h1>ប្រវត្តិការងារ</h1><p>បទចម្រៀងដែលអ្នកបានជ្រើសរើសនៅលើឧបករណ៍នេះ។</p></div>
+        <div id="historyList" class="history-list"></div>
+        <div id="emptyHistory" class="empty-state"><div>♫</div><h3>មិនទាន់មានប្រវត្តិទេ</h3><p>បទចម្រៀងដែលអ្នកជ្រើសរើស នឹងបង្ហាញនៅទីនេះ។</p></div>
+      </section>
+
+      <section class="page" id="settingsPage">
+        <div class="page-heading"><span class="section-kicker">PREFERENCES</span><h1>ការកំណត់</h1><p>គ្រប់គ្រងព័ត៌មាន និងចំណូលចិត្តកម្មវិធី។</p></div>
+        <div class="settings-group">
+          <div class="setting-row"><div class="setting-symbol">🌐</div><div><b>ភាសា</b><small>ភាសាខ្មែរ</small></div><span class="setting-value">ខ្មែរ</span></div>
+          <div class="setting-row"><div class="setting-symbol">🎧</div><div><b>ទម្រង់លទ្ធផល</b><small>កំណត់ពេលភ្ជាប់ AI</small></div><span class="setting-value">WAV</span></div>
+          <div class="setting-row"><div class="setting-symbol">✨</div><div><b>កំណែកម្មវិធី</b><small>UI Preview 1.0</small></div><span class="setting-value">v1.0</span></div>
+        </div>
+        <div class="about-card"><div class="about-logo">008</div><h3>🥰 កម្មវិធីបំបែកសំឡេង008 🥰</h3><p>កម្មវិធីសម្រាប់បំបែកសំឡេងច្រៀង និងសំឡេងភ្លេង។</p><span class="coming-soon">AI CONNECTION • COMING NEXT</span></div>
+      </section>
+
+      <section class="page" id="resultPage">
+        <button class="back-link" id="backHome">← ត្រឡប់ទៅទំព័រដើម</button>
+        <div class="page-heading"><span class="section-kicker">WORKSPACE</span><h1>លទ្ធផលបំបែកសំឡេង</h1><p id="resultTrackName">Your selected track</p></div>
+        <div class="preview-notice"><b>សាកល្បងរូបរាង UI</b><span>AI មិនទាន់បានភ្ជាប់ទេ។ លទ្ធផលសំឡេងពិតនឹងអាចប្រើបាន បន្ទាប់ពីភ្ជាប់ AI។</span></div>
+        <div class="result-card"><div class="result-art art-vocal">♫</div><div class="result-copy"><b>Vocals Only</b><small>សំឡេងច្រៀងដាច់ដោយឡែក</small><span class="pending">រង់ចាំភ្ជាប់ AI</span></div><button class="download-btn" disabled>↓</button></div>
+        <div class="result-card"><div class="result-art art-music">♬</div><div class="result-copy"><b>Instrumental</b><small>សំឡេងភ្លេងគ្មានសំឡេងច្រៀង</small><span class="pending">រង់ចាំភ្ជាប់ AI</span></div><button class="download-btn" disabled>↓</button></div>
+        <div class="result-footer">នៅដំណាក់កាលបន្ទាប់ យើងនឹងភ្ជាប់ AI ដើម្បីបង្កើតឯកសារលទ្ធផល និងបើកប៊ូតុង Download។</div>
+      </section>
+
+      <section class="page" id="processingPage">
+        <div class="processing-wrap">
+          <div class="processing-ring"><div>✦</div></div>
+          <span class="section-kicker">PROCESS PREVIEW</span>
+          <h1>កំពុងរៀបចំ...</h1>
+          <p id="processingFile">Preparing your audio</p>
+          <div class="progress-track"><div id="progressFill"></div></div>
+          <div class="progress-label"><b id="progressPercent">0%</b><span id="progressStatus">UI preview only</span></div>
+          <div class="preview-notice"><b>នេះជាការសាកល្បង UI ប៉ុណ្ណោះ</b><span>មិនទាន់មានការបំបែកសំឡេងពិតទេ។ យើងនឹងភ្ជាប់ AI នៅដំណាក់កាលបន្ទាប់។</span></div>
+          <button class="secondary-btn" id="cancelProcess">បោះបង់</button>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-page="homePage"><span>⌂</span><small>ទំព័រដើម</small></button>
+      <button class="nav-item" data-page="historyPage"><span>◷</span><small>ប្រវត្តិ</small></button>
+      <button class="nav-item" data-page="settingsPage"><span>⚙</span><small>កំណត់</small></button>
+    </nav>
+  </div>
+  <audio id="audioPreview" controls class="audio-preview hidden"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
